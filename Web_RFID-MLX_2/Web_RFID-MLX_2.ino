@@ -215,30 +215,6 @@ void loop() {
     delay(3000); // delay 3 second
     lcd.clear();
   }
-
-  /*String Link_tag;
-  String Link_suhu;
-  String Suhu = "34.1";
-  HTTPClient http;
-  HTTPClient http1;
-  Link_tag = "http://192.168.0.2/absensi/kirimkartu.php?nokartu=" + IDTAG;
-  Link_suhu = "http://192.168.0.2/absensi/kirimdata.php?suhu=" + Suhu;
-  http.begin(client, host, httpPort, Link_tag); //client, host, port, url
-  http1.begin(client, host, httpPort, Link_suhu); //client, host, port, url
-
-  //HTTP Send for RFID
-  int httpCode = http.GET();
-  String payload = http.getString();
-  Serial.println(httpCode);
-  Serial.println(payload);
-  http.end();
-  //HTTP Send for Suhu
-  int httpCode1 = http1.GET();
-  String payload1 = http1.getString();
-  Serial.println(httpCode1);
-  Serial.println(payload1);
-  http.end();
-  http1.end();*/
-
+  
   delay (500);
 }
